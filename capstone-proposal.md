@@ -15,18 +15,19 @@ _It will give the user the ability to browse and link to my projects via a Unity
 ### **MVP Resources:**
 * _React/Redux_
 * _Jquery_
-* Rest Api (githubs api)
+* _Rest Api (github's api)_
 * _Unity Engine_
 * _Javascript/Jsx for components_
 * _C# for unity objects_
 
 ### **Stretch Goals**
 * _Pixel Art Character/Animations and Tiles_
-* _Search and organization funcitonality in standard portfolio_
+* _Search and organization functionality in standard portfolio_
 * _Audio Manager for Unity Portfolio_
+* _Search bar for StandardPortfolio_
 
 ### What additional tools, frameworks, libraries, APIs, or other resources will these additional features require?
 * _Aseprite(pixel art editor)_
 
 ##### Is there anything else you'd like your instructor to know?
-I will keep a log of my unity components to the best of my ability. Many unity objects will require Unity Objects such as Collidors, RigidBody, Camera, Lighting etc, some of which will placed on an object of my creation without any change needed. Any Additional functionality needed (such as camera follow, player controller etc.) I will be creating and will add to a unity components tree. I may make different trees for different objects.
+I will keep a log of my unity components to the best of my ability. Many unity objects will require many Unity specific components such as Colliders, RigidBody, Camera, SpriteRenderer, Animators etc, some of which will placed on an object of my creation within the editor while some will be added to components via code. Any Additional functionality needed (such as camera follow, player controller etc.) I will be creating from scratch and will add to a unity components tree. I may make different trees for different objects.

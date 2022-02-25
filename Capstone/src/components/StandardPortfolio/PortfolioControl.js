@@ -8,7 +8,7 @@ class PortfolioControl extends React.Component{
   render(){
     return(
       <React.Fragment>
-
+        <h1>Portfolio here eventually </h1>
       </React.Fragment>
     )
   }

@@ -1,30 +1,30 @@
 import * as c from './ActionTypes'
 
-export const requestHeadlines = () => ({
-  type: c.REQUEST_HEADLINES
+export const requestRepositories = () => ({
+  type: c.REQUEST_REPOSITORIES
 });
 
-export const getHeadlinesSuccess = (headlines) => ({
-  type: c.GET_HEADLINES_SUCCESS,
-  headlines
+export const getRepositoriesSuccess = (repositories) => ({
+  type: c.GET_REPOSITORIES_SUCCESS,
+  repositories
 });
 
-export const getHeadlinesFailure = (error) => ({
-  type: c.GET_HEADLINES_FAILURE,
+export const getRepositoriesFailure = (error) => ({
+  type: c.GET_REPOSITORIES_FAILURE,
   error
 });
 
 export const makeApiCall = () => {
   return dispatch => {
-    dispatch(requestHeadlines);
-    return fetch(`https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${process.env.REACT_APP_API_KEY}`)
+    dispatch(requestRepositories);
+    return fetch(`https://api.github.com/users/jlewilson/repos?sort=created`)
       .then(response => response.json())
       .then(
         (jsonifiedResponse) => {
-          dispatch(getHeadlinesSuccess(jsonifiedResponse.results));
+          dispatch(getRepositoriesSuccess(jsonifiedResponse));
         })
       .catch((error) => {
-        dispatch(getHeadlinesFailure(error));
+        dispatch(getRepositoriesFailure(error));
       });
   }
 }

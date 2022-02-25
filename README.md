@@ -3,7 +3,8 @@
 ![Component Tree](./Capstone/src/img/ComponentTree.png)
 
 ### Planning log
-2/18
+* Note: This is in Alaska time 
+2/18 
 * 10:45 Start Figma
 * 11:10 - 12 research Rest Api for github
 * 12 12:20 researching Iframes
@@ -23,3 +24,7 @@
 * 6:45 - 7:10 Adjust project bones
 * 7:10 - 7:30 set up Unity project bones
 * 7:30 8:30- Read Unity WebGl Docs, researching browser control within unity/ trouble shoot unity/vscode intellisense  issues
+
+02/21
+* 4 - 5 Research react-unity-webgl package
+6:30 -7:20 Debug unity object not showing in react, Finally fixed!!!!! Now I just need to resize the unity components, Also my javascript works within unity! I can open a new tab perfectly

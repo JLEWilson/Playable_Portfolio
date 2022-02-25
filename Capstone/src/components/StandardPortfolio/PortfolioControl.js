@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { makeApiCall } from '../../actions/index'
+import { gi, githubApiCall } from '../../actions/index'
 
 class PortfolioControl extends React.Component{
   constructor(props){
@@ -9,7 +9,7 @@ class PortfolioControl extends React.Component{
 
   componentDidMount() {
     const { dispatch } = this.props;
-    dispatch(makeApiCall())
+    dispatch(githubApiCall());
   }
 
   render(){

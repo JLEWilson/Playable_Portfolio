@@ -28,3 +28,8 @@
 02/21
 * 4 - 5 Research react-unity-webgl package
 6:30 -7:20 Debug unity object not showing in react, Finally fixed!!!!! Now I just need to resize the unity components, Also my javascript works within unity! I can open a new tab perfectly
+
+02/25
+* 8:15 - 9 Setting up routs, was unable to get working
+* 9 Rereading routs in learn to program
+9:20 Got routs to work, needed "exact" keyword on home route, going to add changes and commit now that it works

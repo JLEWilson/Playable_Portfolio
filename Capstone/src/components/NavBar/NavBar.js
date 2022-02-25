@@ -1,34 +1,44 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Button } from 'react-bootstrap'
 
 function NavBar() {
 	const navStyles = {
-		display: "flex"
+		display: "flex",
+    backgroundColor: "azure",
+    alignItems: "center",
+		justifyContent: "center",
+    padding: "1em",
+		gap: "5%",
 	}
-	
+	const divStyles = {
+		border: "2px solid black",
+		textAlign: "center",
+		flex: "1",
+		padding: ".7em",
+		boxShadow: ".2em .2em .5em cyan"
+	}
   return(
 		<React.Fragment>
 			<div style={navStyles}>
 				<Link to="/">
-					<Button>
-						<h2>Playable Portfolio</h2>
-					</Button>
+					<div style={divStyles}>
+						<h3>Playable Portfolio</h3>
+					</div>
 				</Link>
 				<Link to="/portfolio">
-					<Button>
-						<h2>Standard Portfolio</h2>
-					</Button>
+					<div style={divStyles}>
+						<h3>Standard Portfolio</h3>
+					</div>
 				</Link>
 				<Link to="/about">
-					<Button>
-						<h2>About Me</h2>
-					</Button>
+					<div style={divStyles}>
+						<h3>About Me</h3>
+					</div>
 				</Link>
 				<Link to="/contact">
-					<Button>
-						<h2>Contact</h2>
-					</Button>
+					<div style={divStyles}>
+						<h3>Contact</h3>
+					</div>
 				</Link>
 			</div>
 		</React.Fragment>

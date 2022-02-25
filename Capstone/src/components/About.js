@@ -3,9 +3,7 @@ import React from 'react';
 function About() {
   return (
    <React.Fragment>
-     {/*
-     Name, background, coding experience
-     */}
+    <h1>Hello! This is the About me page.</h1>
    </React.Fragment>
   );
 }

@@ -34,4 +34,4 @@
 * 9 Rereading routs in learn to program
 9:20 Got routs to work, needed "exact" keyword on home route, going to add changes and commit now that it works
 
-1:30 researching concat, recursive array is returning undefined
+1:30-: 3:45 researching concat, and promise chainging

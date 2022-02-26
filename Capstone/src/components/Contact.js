@@ -1,9 +1,12 @@
 import React from 'react';
 
-function Contact() {
+function About() {
   return (
    <React.Fragment>
-     <h1>Hello! Contact me here!!!</h1>
+     {/*
+     Email, LinkedIn, Github 
+     Stretch: Email form
+     */}
    </React.Fragment>
   );
 }

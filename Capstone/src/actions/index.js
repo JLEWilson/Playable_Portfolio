@@ -19,17 +19,16 @@ export const githubApiCall = () => {
     dispatch(requestRepositories);
     return fetch(`https://api.github.com/users/jlewilson/repos?per_page=60&page=1`)
       .then(response => response.json())
+      .then(jsonifiedResponse => jsonifiedResponse.concat(checkForAdditionalRepositories(2, jsonifiedResponse)))
       .then(
-        (jsonifiedResponse) => {
-          const allRepos = jsonifiedResponse.push(checkForAdditionalRepositories(2, jsonifiedResponse));
-          if(Array.isArray(allRepos)){
+        (allRepositories) => {
+          console.log(allRepositories);
+          if(Array.isArray(allRepositories)){
             dispatch(
               getRepositoriesSuccess(
-                allRepos));
+                allRepositories));
           } else {
-            dispatch(
-              getRepositoriesSuccess(
-                jsonifiedResponse));
+            throw(allRepositories)
           }
         })
       .catch((error) => {
@@ -38,18 +37,17 @@ export const githubApiCall = () => {
   }
 }
 
-const checkForAdditionalRepositories = (pageNumber, currentRepositories) => {
+async function checkForAdditionalRepositories (pageNumber, currentRepositories){
+  console.log(currentRepositories);
   if(currentRepositories.length === 0)
   {
     return [];
   }  
-  console.log(currentRepositories);
   fetch(`https://api.github.com/users/jlewilson/repos?per_page=60&page=${pageNumber}`)
     .then(response => response.json())
     .then(
       (jsonifiedResponse) => {
-        console.log(jsonifiedResponse);
-        return jsonifiedResponse.push(checkForAdditionalRepositories(pageNumber + 1, jsonifiedResponse));
+        return jsonifiedResponse.concat(checkForAdditionalRepositories(pageNumber + 1, jsonifiedResponse));
       })
     .catch((error) => {
       return error;

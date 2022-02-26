@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { gi, githubApiCall } from '../../actions/index'
+import {githubApiCall } from '../../actions/index'
 
 class PortfolioControl extends React.Component{
   constructor(props){

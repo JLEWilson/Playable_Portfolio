@@ -37,7 +37,7 @@ export const githubApiCall = () => {
   }
 }
 
-async function checkForAdditionalRepositories (pageNumber, currentRepositories){
+const checkForAdditionalRepositories = (pageNumber, currentRepositories) => {
   console.log(currentRepositories);
   if(currentRepositories.length === 0)
   {

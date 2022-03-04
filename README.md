@@ -43,4 +43,4 @@
 
 03/04
 
-12-3 Adding topics to all github projects to be displayed on portfolio, adding readmes to old projects I want to display
+12-2:30 Adding topics to all github projects to be displayed on portfolio, adding readmes to old projects I want to display

@@ -34,4 +34,13 @@
 * 9 Rereading routs in learn to program
 9:20 Got routs to work, needed "exact" keyword on home route, going to add changes and commit now that it works
 
-1:30-: 3:45 researching concat, and promise chainging
+1:30-: 3:45 researching concat, and promise chaining
+
+
+03/02
+
+6:00-8:00 Drawing test art assets
+
+03/04
+
+12-3 Adding topics to all github projects to be displayed on portfolio, adding readmes to old projects I want to display

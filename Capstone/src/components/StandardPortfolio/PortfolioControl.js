@@ -2,6 +2,15 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { getAllRepositories } from '../../actions/index'
 import * as c from '../../actions/ActionTypes';
+import GitRepository from './GitRepository';
+import {v4} from 'uuid'; 
+
+const repoCategories = [
+  "favorites",
+  "class-projects",
+  "front-end",
+  "back-end"
+]
 
 export class PortfolioControl extends React.Component{
   constructor(props){
@@ -10,14 +19,13 @@ export class PortfolioControl extends React.Component{
 
   componentDidMount() {
     const { dispatch } = this.props;
-    dispatch(getAllRepositories());
+    //dispatch(getAllRepositories());
   }
   componentDidUpdate(prevProps){
     if(prevProps.repositories !== this.props.repositories){
       this.setCategory("favorites");
     }
   }
-
   setCategory = (category) => {
     const { dispatch } = this.props;
     const action = {
@@ -26,9 +34,37 @@ export class PortfolioControl extends React.Component{
     }
     dispatch(action);
   }
-
+  titleCaseText = (text) => {
+    const words = text.split("-");
+    const titleCase = words.map(w => w.charAt(0).toUpperCase() + w.slice(1));
+    return titleCase.join(" ")
+  }
   render() {
     const { error, isLoadingUserInfo, isLoadingRepositories, userInfo, targetRepos} = this.props;
+    
+    const styles = {
+      container: {
+        marginTop: "1em",
+        display: "flex",
+        gap: "2em",
+  
+      },
+      categories: {
+        flex: "1",
+        display: "flex",
+        flexDirection: "column",
+        gap: "1em"
+      },
+      repos: {
+        flex: "2",
+        border: "1px solid red"
+      },
+      buttonStyles: {
+        backgroundColor: "cyan",
+        fontSize: "3em",
+      }
+    }
+    
     if (error) {
       console.log("error");
       return <React.Fragment>Error: {error.message}</React.Fragment>;
@@ -40,16 +76,26 @@ export class PortfolioControl extends React.Component{
       return <React.Fragment>Loading all repositories...</React.Fragment>;
     } else {
       return (
-        <React.Fragment>
-          <h1>userInfo</h1>
-          <ul>
-            {targetRepos.map((repo, index) =>
-              <li key={index}>
-                <h3>{index}: {repo.name}</h3>
-              </li>
+        <div style={styles.container}>
+          <div style={styles.categories}>
+            {repoCategories.map((category) =>
+              <button 
+              style={styles.buttonStyles}
+              type="button"
+              key={v4()}
+              onClick={()=> this.setCategory(category)}
+              >{this.titleCaseText(category)}</button>
             )}
-          </ul>
-        </React.Fragment>
+          </div>
+          <div style={styles.repos}>
+            {targetRepos.map((repo) =>
+              <GitRepository
+                key={v4()}
+                repo={repo}
+              />
+            )}
+          </div>
+        </div>
       );
     }
   }

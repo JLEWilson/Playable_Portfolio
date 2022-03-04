@@ -1,47 +1,68 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import {githubApiCall } from '../../actions/index'
+import { getAllRepositories } from '../../actions/index'
+import * as c from '../../actions/ActionTypes';
 
-class PortfolioControl extends React.Component{
+export class PortfolioControl extends React.Component{
   constructor(props){
     super(props);
   }
 
   componentDidMount() {
     const { dispatch } = this.props;
-    dispatch(githubApiCall());
+    dispatch(getAllRepositories());
+  }
+  componentDidUpdate(prevProps){
+    if(prevProps.repositories !== this.props.repositories){
+      this.setCategory("favorites");
+    }
   }
 
-  render(){
-    const { error, isLoaded, repositories } = this.props;
+  setCategory = (category) => {
+    const { dispatch } = this.props;
+    const action = {
+      type: c.SET_CATEGORY,
+      category: category
+    }
+    dispatch(action);
+  }
 
-    if(error){
-      return <React.Fragment>Error: {error.message}</React.Fragment>
-    } else if(isLoaded) {
-      return <React.Fragment>Loading...</React.Fragment>
-    } else { 
-      return(
+  render() {
+    const { error, isLoadingUserInfo, isLoadingRepositories, userInfo, targetRepos} = this.props;
+    if (error) {
+      console.log("error");
+      return <React.Fragment>Error: {error.message}</React.Fragment>;
+    } else if (isLoadingUserInfo) {
+      console.log("loading");
+      return <React.Fragment>Gathering User Details...</React.Fragment>;
+    } else if (isLoadingRepositories) {
+      console.log("loading");
+      return <React.Fragment>Loading all repositories...</React.Fragment>;
+    } else {
+      return (
         <React.Fragment>
-          <h1>Repositories: </h1>
+          <h1>userInfo</h1>
           <ul>
-            {repositories.map((repo, index) => 
+            {targetRepos.map((repo, index) =>
               <li key={index}>
-                <h3>{repo.name}</h3>
-                <h4>{repo.html_url}</h4>
+                <h3>{index}: {repo.name}</h3>
               </li>
             )}
           </ul>
         </React.Fragment>
-      )
+      );
     }
   }
 }
 const mapStateToProps = state => {
   return {
+    userInfo: state.userInfo,
+    isLoadingUserInfo: state.isLoadingUserInfo,
+    isLoadingRepositories: state.isLoadingRepositories,
+    error: state.error,
     repositories: state.repositories,
-    isLoading: state.isLoading,
-    error: state.error
+    category: state.category,
+    targetRepos: state.targetRepos
   }
 }
-
 export default connect(mapStateToProps)(PortfolioControl);

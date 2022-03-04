@@ -4,6 +4,7 @@ import NavBar from "./NavBar/NavBar";
 import About from "./About";
 import Contact from "./Contact"
 import PortfolioControl from "./StandardPortfolio/PortfolioControl";
+import ThankYou from "./ThankYou";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 
@@ -30,6 +31,9 @@ function App() {
           </Route>
           <Route path="/contact">
             <Contact />
+          </Route>
+          <Route path="/thankyou">
+            <ThankYou />
           </Route>
         </Switch>
       </div>

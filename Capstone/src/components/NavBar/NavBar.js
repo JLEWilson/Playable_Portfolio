@@ -1,43 +1,49 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useMediaQuery } from '../../Hooks/MediaQuery';
 
 function NavBar() {
+	const isSmallScreen = useMediaQuery('(min-width: 720px)');
 	const navStyles = {
-		display: "flex",
-    backgroundColor: "azure",
-    alignItems: "center",
-		justifyContent: "center",
-    padding: "1em",
-		gap: "5%",
+		container: {
+			display: "flex",
+			backgroundColor: "azure",
+			alignItems: "center",
+			justifyContent: "center",
+			padding: "1em",
+			gap: "5%",
+		},
+		link: isSmallScreen => ({
+			border: "2px solid black",
+			textAlign: "center",
+			flex: "1",
+			padding: ".7em",
+			fontSize: isSmallScreen ? "1.17em" : ".75em",
+			boxShadow: ".2em .2em .5em cyan"
+		})
 	}
-	const divStyles = {
-		border: "2px solid black",
-		textAlign: "center",
-		flex: "1",
-		padding: ".7em",
-		boxShadow: ".2em .2em .5em cyan"
-	}
+
   return(
 		<React.Fragment>
-			<div style={navStyles}>
+			<div style={navStyles.container}>
 				<Link to="/">
-					<div style={divStyles}>
-						<h3>Playable Portfolio</h3>
+					<div style={navStyles.link(isSmallScreen)}>
+						Playable Portfolio	
 					</div>
 				</Link>
 				<Link to="/portfolio">
-					<div style={divStyles}>
-						<h3>Standard Portfolio</h3>
+					<div style={navStyles.link(isSmallScreen)}>
+						Standard Portfolio	
 					</div>
 				</Link>
 				<Link to="/about">
-					<div style={divStyles}>
-						<h3>About Me</h3>
+					<div style={navStyles.link(isSmallScreen)}>
+						About Me	
 					</div>
 				</Link>
 				<Link to="/contact">
-					<div style={divStyles}>
-						<h3>Contact</h3>
+					<div style={navStyles.link(isSmallScreen)}>
+						Contact	
 					</div>
 				</Link>
 			</div>

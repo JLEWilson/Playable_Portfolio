@@ -5,12 +5,18 @@ import About from "./About";
 import Contact from "./Contact"
 import PortfolioControl from "./StandardPortfolio/PortfolioControl";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Container from "react-bootstrap/Container";
+
 
 function App() {
+  const styles = {
+    container: {
+      width: "80vw",
+      margin: "0 10vw"
+    }
+  }
   return (
     <Router>
-      <Container>
+      <div style={styles.container}>
         <NavBar/>
         <Switch>
           <Route exact path="/">
@@ -26,7 +32,7 @@ function App() {
             <Contact />
           </Route>
         </Switch>
-      </Container>
+      </div>
     </Router>
   );
 }

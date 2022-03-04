@@ -40,14 +40,13 @@ export class PortfolioControl extends React.Component{
     return titleCase.join(" ")
   }
   render() {
-    const { error, isLoadingUserInfo, isLoadingRepositories, userInfo, targetRepos} = this.props;
+    const { error, isLoadingUserInfo, isLoadingRepositories, targetRepos} = this.props;
     
     const styles = {
       container: {
         marginTop: "1em",
         display: "flex",
         gap: "2em",
-  
       },
       categories: {
         flex: "1",
@@ -62,18 +61,28 @@ export class PortfolioControl extends React.Component{
       buttonStyles: {
         backgroundColor: "cyan",
         fontSize: "3em",
+      },
+      loading: {
+        color: "lightGray",
+        textAlign: "center",
+        fontSize: "4em"
+      },
+      error: {
+        color: "#ff0033",
+        textAlign: "center",
+        fontSize: "4em"
       }
     }
     
     if (error) {
       console.log("error");
-      return <React.Fragment>Error: {error.message}</React.Fragment>;
+      return <div style={styles.error}>Error: {error.message}</div>;
     } else if (isLoadingUserInfo) {
       console.log("loading");
-      return <React.Fragment>Gathering User Details...</React.Fragment>;
+      return <div style={styles.loading}>Gathering User Details...</div>;
     } else if (isLoadingRepositories) {
       console.log("loading");
-      return <React.Fragment>Loading all repositories...</React.Fragment>;
+      return <div style={styles.loading}>Loading all repositories...</div>;
     } else {
       return (
         <div style={styles.container}>

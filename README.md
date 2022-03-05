@@ -44,3 +44,15 @@
 03/04
 
 12-2:30 Adding topics to all github projects to be displayed on portfolio, adding readmes to old projects I want to display
+
+ToDo ADD DETAILED DESCRIPTIONS
+
+2:30 Building character in unity
+2:45 creating base animation for testing
+3:20 building character controller
+3:30 building camera follow
+3:45 building repo object
+4 building project to test js plugin
+
+Unity commits can be found here
+https://github.com/JLEWilson/UnityPortfolio.Log

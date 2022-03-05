@@ -54,5 +54,9 @@ ToDo ADD DETAILED DESCRIPTIONS
 3:45 building repo object
 4 building project to test js plugin
 
+
+4:17 test build success! Unable to test javascript functions within unity, so i had to build the game and place the build files within my react project. 
+
+
 Unity commits can be found here
 https://github.com/JLEWilson/UnityPortfolio.Log

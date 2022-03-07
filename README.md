@@ -58,5 +58,22 @@ ToDo ADD DETAILED DESCRIPTIONS
 4:17 test build success! Unable to test javascript functions within unity, so i had to build the game and place the build files within my react project. 
 
 
+03/5
+
+10:30 Modifying repository trigger component to work with key press instead of on player collision.
+
+11-12 Setting up links on repo objects
+
+1:30-2:30 Failing at art, using assets from previous game for now
+2:30-3 Adding animations 
+3-3:30 linking animations to code and testing
+
+03/06
+
+3-5 Spritework
+5-7 Adding tiles
+
+
+
 Unity commits can be found here
 https://github.com/JLEWilson/UnityPortfolio.Log

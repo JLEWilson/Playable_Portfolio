@@ -73,7 +73,30 @@ ToDo ADD DETAILED DESCRIPTIONS
 3-5 Spritework
 5-7 Adding tiles
 
+03/07
 
+10:30 - 11 Creating additional tiles
+12-12:20 Importing and changing tiles
+12:20-12:50 importing font art and creating asset
+12:50-1:30 Create dialogue system/Art
+1:30-3:45 (except for meeting) Designing level
+
+
+03/08
+
+07:15 Level design
+07:50 Updating camera to stay within tilemap bounds.
+8:15-9:00 Researching Cinemachine
+9-9:30 Setting up cinemachine
+9:30 DEI MEETING
+10:30-11 Continuing to implement cinemachine/map bounds/pixel perfect camera settings
 
 Unity commits can be found here
 https://github.com/JLEWilson/UnityPortfolio.Log
+
+Character Sprite Animations by:
+Authors: Stephen Challener (Redshrike), Johannes Sjölund (wulax)
+
+- body/male/human/white.png: by Stephen Challener (Redshrike), Johannes Sjölund (wulax). License(s): CC-BY-SA 3.0, GPL 3.0. 
+    - https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles
+    - https://opengameart.org/content/lpc-medieval-fantasy-character-sprites

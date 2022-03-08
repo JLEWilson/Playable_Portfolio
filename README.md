@@ -90,6 +90,7 @@ ToDo ADD DETAILED DESCRIPTIONS
 9-9:30 Setting up cinemachine
 9:30 DEI MEETING
 10:30-11 Continuing to implement cinemachine/map bounds/pixel perfect camera settings
+11 Adjusting dialogue trigger script/current triggers
 
 Unity commits can be found here
 https://github.com/JLEWilson/UnityPortfolio.Log

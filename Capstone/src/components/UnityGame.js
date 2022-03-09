@@ -22,7 +22,7 @@ function UnityGame() {
       height: isXl ? "720px" :
               isLg ? "540px" :
               isMd ? "360px" :"180px",
-      margin: "auto",
+      margin: "1em auto",
       display: "block"
 		})
     

@@ -91,6 +91,10 @@ ToDo ADD DETAILED DESCRIPTIONS
 9:30 DEI MEETING
 10:30-11 Continuing to implement cinemachine/map bounds/pixel perfect camera settings
 11 Adjusting dialogue trigger script/current triggers
+12 - 1:30 Adding UI Art for keyboard controls 
+1:45 - 2:10 Ui implementation failed. creating custom ui logos
+2:20 - 2-40 Ui animations
+2:40 - 3-30 level design
 
 Unity commits can be found here
 https://github.com/JLEWilson/UnityPortfolio.Log

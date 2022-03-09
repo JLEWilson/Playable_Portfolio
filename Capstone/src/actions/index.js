@@ -34,7 +34,6 @@ export const getAllRepositories = () => {
       dispatch(getUserInfoSuccess(userInfo));
     }
     const totalPages = Math.ceil(userInfo["public_repos"]/60);
-    console.log(totalPages);
     
     const repositories = await getRepositories(totalPages);
     if(repositories instanceof Error){

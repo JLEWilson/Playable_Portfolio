@@ -96,6 +96,15 @@ ToDo ADD DETAILED DESCRIPTIONS
 2:20 - 2-40 Ui animations
 2:40 - 3-30 level design
 
+03/9
+
+07:15 - 8:05 Create audio manager and sound component.
+8:05 Creating art asset for volume UI;
+8:30 Building audio volume control / researching logorithimc change
+9-10:45 Adjusting volume, adding controls, and adding menu button controls
+
+
+
 Unity commits can be found here
 https://github.com/JLEWilson/UnityPortfolio.Log
 

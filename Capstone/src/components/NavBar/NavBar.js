@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useMediaQuery } from '../../Hooks/MediaQuery';
 
 function NavBar() {
-	const isSmallScreen = useMediaQuery('(min-width: 720px)');
+	const isSmallScreen = useMediaQuery('(max-width: 865px)');
 	const navStyles = {
 		container: {
 			display: "flex",
@@ -18,7 +18,7 @@ function NavBar() {
 			textAlign: "center",
 			flex: "1",
 			padding: ".7em",
-			fontSize: isSmallScreen ? "1.17em" : ".75em",
+			fontSize: isSmallScreen ? ".75em" : "1.17em",
 			boxShadow: ".2em .2em .5em cyan"
 		})
 	}

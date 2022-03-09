@@ -102,7 +102,8 @@ ToDo ADD DETAILED DESCRIPTIONS
 8:05 Creating art asset for volume UI;
 8:30 Building audio volume control / researching logorithimc change
 9-10:45 Adjusting volume, adding controls, and adding menu button controls
-
+10:45-11 adjusting build settings
+11:45-12:30 styling game component to preserve aspect ratios 
 
 
 Unity commits can be found here

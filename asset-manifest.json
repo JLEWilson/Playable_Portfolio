@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Playable_Portfolio/static/css/main.172b39fe.chunk.css",
-    "main.js": "/Playable_Portfolio/static/js/main.a0ee3a24.chunk.js",
-    "main.js.map": "/Playable_Portfolio/static/js/main.a0ee3a24.chunk.js.map",
+    "main.js": "/Playable_Portfolio/static/js/main.e8024e8a.chunk.js",
+    "main.js.map": "/Playable_Portfolio/static/js/main.e8024e8a.chunk.js.map",
     "runtime-main.js": "/Playable_Portfolio/static/js/runtime-main.a135b88c.js",
     "runtime-main.js.map": "/Playable_Portfolio/static/js/runtime-main.a135b88c.js.map",
     "static/js/2.a271a3ae.chunk.js": "/Playable_Portfolio/static/js/2.a271a3ae.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.b7f07be6.chunk.js": "/Playable_Portfolio/static/js/3.b7f07be6.chunk.js",
     "static/js/3.b7f07be6.chunk.js.map": "/Playable_Portfolio/static/js/3.b7f07be6.chunk.js.map",
     "index.html": "/Playable_Portfolio/index.html",
-    "precache-manifest.2a8e48730c4ec0df61c7b28d4cf7dbdc.js": "/Playable_Portfolio/precache-manifest.2a8e48730c4ec0df61c7b28d4cf7dbdc.js",
+    "precache-manifest.9cddaaea9158178310a8550d0ddea4a8.js": "/Playable_Portfolio/precache-manifest.9cddaaea9158178310a8550d0ddea4a8.js",
     "service-worker.js": "/Playable_Portfolio/service-worker.js",
     "static/css/main.172b39fe.chunk.css.map": "/Playable_Portfolio/static/css/main.172b39fe.chunk.css.map",
     "static/media/Headshot.jpg": "/Playable_Portfolio/static/media/Headshot.e8dabeb1.jpg"
@@ -19,6 +19,6 @@
     "static/js/runtime-main.a135b88c.js",
     "static/js/2.a271a3ae.chunk.js",
     "static/css/main.172b39fe.chunk.css",
-    "static/js/main.a0ee3a24.chunk.js"
+    "static/js/main.e8024e8a.chunk.js"
   ]
 }

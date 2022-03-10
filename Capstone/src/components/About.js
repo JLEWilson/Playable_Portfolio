@@ -12,7 +12,7 @@ function About() {
       margin: "1em 0"
     },
     about: {
-      backgroundColor: "cyan",
+      backgroundColor: "#84ca94",
       border: "2px solid black",
       width: "80%",
       margin: "0 auto",

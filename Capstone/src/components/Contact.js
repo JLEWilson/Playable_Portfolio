@@ -1,9 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Contact() {
-  function goToUrl(url){
-    window.open(url);
-  }
 
   const styles = {
     container: {
@@ -11,11 +9,14 @@ function Contact() {
       flexDirection: "column",
       
     },
-    button: {
+    link: {
       fontSize: "2em",
       border: "1px solid black",
       width: "30vw",
       textAlign: "center",
+      textDecoration:"none",
+      color: "black",
+      backgroundColor: "#84ca94",
       margin: "1em auto"
     },
     email: {
@@ -23,10 +24,11 @@ function Contact() {
       textAlign: "center",
     },
     formEmail: {
-      width: " 15vw"
+      width: " 35vw",
+      marginTop: "2em"
     },
     formText: {
-      width: " 15vw",
+      width: " 35vw",
       height: "5em"
     },
     formButton: {
@@ -34,26 +36,30 @@ function Contact() {
       padding: ".5em",
       backgroundColor: "LightGreen"
     },
+    emailMe: {
+      marginBottom: "0"
+    },
+    emailAddress: {
+      marginTop: ".2em"
+    }
 
   }
 
   return (
    <div style={styles.container}>
-    <div
-      style={styles.button}
-      type='button'
-      onClick={() => goToUrl("https://www.linkedin.com/in/jacob-lee-eugene-wilson/")}
-      >LinkedIn </div>
 
-    <div
-      style={styles.button}
-      type='button'
-      onClick={() => goToUrl("https://github.com/JLEWilson")}
-      >GitHub</div>
+    <Link to={{ pathname: "https://www.linkedin.com/in/jacob-lee-eugene-wilson/" }} 
+          style={styles.link}
+          target="_blank" 
+          >LinkedIn</Link>
+    <Link to={{ pathname: "https://github.com/JLEWilson" }} 
+          style={styles.link}
+          target="_blank" 
+          >Github</Link>
 
     <div style={styles.email}>
-      <h2>Send me an email!</h2>
-      <h6>Sends to jacobleeeugenewilson@gmail.com</h6>
+      <h2 style={styles.emailMe}>Send me an email!</h2>
+      <h5 style={styles.emailAddress}>Sends to jacobleeeugenewilson@gmail.com</h5>
       <form action="https://formsubmit.co/jacobleeeugenewilson@gmail.com" method="POST">
         <input type="hidden" name="_subject" value="Portfolio Email!!!"/>
         <input type="hidden" name="_next" value="http://localhost:3000/thankyou"/> {/*update once deployed*/}

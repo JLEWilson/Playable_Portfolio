@@ -19,7 +19,7 @@ export class PortfolioControl extends React.Component{
 
   componentDidMount() {
     const { dispatch } = this.props;
-    //dispatch(getAllRepositories());
+    dispatch(getAllRepositories());
   }
   componentDidUpdate(prevProps){
     if(prevProps.repositories !== this.props.repositories){
@@ -56,10 +56,9 @@ export class PortfolioControl extends React.Component{
       },
       repos: {
         flex: "2",
-        border: "1px solid red"
       },
       buttonStyles: {
-        backgroundColor: "cyan",
+        backgroundColor: "#84ca94",
         fontSize: "3em",
       },
       loading: {

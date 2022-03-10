@@ -19,7 +19,7 @@ export class PortfolioControl extends React.Component{
 
   componentDidMount() {
     const { dispatch } = this.props;
-    //dispatch(getAllRepositories());
+    dispatch(getAllRepositories());
   }
   componentDidUpdate(prevProps){
     if(prevProps.repositories !== this.props.repositories){

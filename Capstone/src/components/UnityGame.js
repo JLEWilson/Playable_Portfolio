@@ -36,7 +36,7 @@ function UnityGame() {
 
 export default UnityGame;
 
-/* aspect rations
+/* aspect ratios
 320 x 180, small
 640 x 360, medium
 960 x 540, large

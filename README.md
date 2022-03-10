@@ -3,8 +3,7 @@
 ![Component Tree](./Capstone/src/img/ComponentTree.png)
 
 ### Planning log
-* Note: This is in Alaska time 
-2/18 
+2/18
 * 10:45 Start Figma
 * 11:10 - 12 research Rest Api for github
 * 12 12:20 researching Iframes
@@ -23,6 +22,7 @@
 * 6:10 - 6:45  Research unity Scriptable Objects 
 * 6:45 - 7:10 Adjust project bones
 * 7:10 - 7:30 set up Unity project bones
+<<<<<<< HEAD
 * 7:30 8:30- Read Unity WebGl Docs, researching browser control within unity/ trouble shoot unity/vscode intellisense  issues
 
 02/21
@@ -115,3 +115,6 @@ Authors: Stephen Challener (Redshrike), Johannes Sjölund (wulax)
 - body/male/human/white.png: by Stephen Challener (Redshrike), Johannes Sjölund (wulax). License(s): CC-BY-SA 3.0, GPL 3.0. 
     - https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles
     - https://opengameart.org/content/lpc-medieval-fantasy-character-sprites
+=======
+* 7:30 8:30- Read Unity WebGl Docs, researching browser control within unity/ trouble shoot unity/vscode intellisense  issues
+>>>>>>> 2a769ae510c3247ebbf5977231f5c6381e2b671a

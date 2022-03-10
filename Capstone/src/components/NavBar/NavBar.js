@@ -1,4 +1,5 @@
 import React from 'react';
+<<<<<<< HEAD
 import { Link } from 'react-router-dom';
 import { useMediaQuery } from '../../Hooks/MediaQuery';
 
@@ -56,6 +57,16 @@ function NavBar() {
 			</div>
 		</React.Fragment>
   )
+=======
+
+function NavBar() {
+
+    return(
+        <React.Fragment>
+            {/*Nav Buttons, maybe make seperate */}
+        </React.Fragment>
+    )
+>>>>>>> 2a769ae510c3247ebbf5977231f5c6381e2b671a
 }
 
 export default NavBar;

@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/playable_portfolio/static/css/main.d9fb3009.chunk.css",
-    "main.js": "/playable_portfolio/static/js/main.db354acb.chunk.js",
-    "main.js.map": "/playable_portfolio/static/js/main.db354acb.chunk.js.map",
-    "runtime-main.js": "/playable_portfolio/static/js/runtime-main.a727d610.js",
-    "runtime-main.js.map": "/playable_portfolio/static/js/runtime-main.a727d610.js.map",
-    "static/js/2.a271a3ae.chunk.js": "/playable_portfolio/static/js/2.a271a3ae.chunk.js",
-    "static/js/2.a271a3ae.chunk.js.map": "/playable_portfolio/static/js/2.a271a3ae.chunk.js.map",
-    "static/js/3.b7f07be6.chunk.js": "/playable_portfolio/static/js/3.b7f07be6.chunk.js",
-    "static/js/3.b7f07be6.chunk.js.map": "/playable_portfolio/static/js/3.b7f07be6.chunk.js.map",
-    "index.html": "/playable_portfolio/index.html",
-    "precache-manifest.104224f682cad05e3acb827fac1443d4.js": "/playable_portfolio/precache-manifest.104224f682cad05e3acb827fac1443d4.js",
-    "service-worker.js": "/playable_portfolio/service-worker.js",
-    "static/css/main.d9fb3009.chunk.css.map": "/playable_portfolio/static/css/main.d9fb3009.chunk.css.map",
-    "static/media/Headshot.jpg": "/playable_portfolio/static/media/Headshot.e8dabeb1.jpg"
+    "main.css": "/Playable_Portfolio/static/css/main.d9fb3009.chunk.css",
+    "main.js": "/Playable_Portfolio/static/js/main.db354acb.chunk.js",
+    "main.js.map": "/Playable_Portfolio/static/js/main.db354acb.chunk.js.map",
+    "runtime-main.js": "/Playable_Portfolio/static/js/runtime-main.a135b88c.js",
+    "runtime-main.js.map": "/Playable_Portfolio/static/js/runtime-main.a135b88c.js.map",
+    "static/js/2.a271a3ae.chunk.js": "/Playable_Portfolio/static/js/2.a271a3ae.chunk.js",
+    "static/js/2.a271a3ae.chunk.js.map": "/Playable_Portfolio/static/js/2.a271a3ae.chunk.js.map",
+    "static/js/3.b7f07be6.chunk.js": "/Playable_Portfolio/static/js/3.b7f07be6.chunk.js",
+    "static/js/3.b7f07be6.chunk.js.map": "/Playable_Portfolio/static/js/3.b7f07be6.chunk.js.map",
+    "index.html": "/Playable_Portfolio/index.html",
+    "precache-manifest.876ae686b4507bdb42236d5c60aab0de.js": "/Playable_Portfolio/precache-manifest.876ae686b4507bdb42236d5c60aab0de.js",
+    "service-worker.js": "/Playable_Portfolio/service-worker.js",
+    "static/css/main.d9fb3009.chunk.css.map": "/Playable_Portfolio/static/css/main.d9fb3009.chunk.css.map",
+    "static/media/Headshot.jpg": "/Playable_Portfolio/static/media/Headshot.e8dabeb1.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.a727d610.js",
+    "static/js/runtime-main.a135b88c.js",
     "static/js/2.a271a3ae.chunk.js",
     "static/css/main.d9fb3009.chunk.css",
     "static/js/main.db354acb.chunk.js"

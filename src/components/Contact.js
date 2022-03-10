@@ -70,7 +70,7 @@ function Contact() {
       <h5 style={styles.emailAddress}>Sends to jacobleeeugenewilson@gmail.com</h5>
       <form action="https://formsubmit.co/jacobleeeugenewilson@gmail.com" method="POST">
         <input type="hidden" name="_subject" value="Portfolio Email!!!"/>
-        <input type="hidden" name="_next" value="http://localhost:3000/thankyou"/> {/*update once deployed*/}
+        <input type="hidden" name="_next" value="https://jlewilson.github.io/Playable_Portfolio/thankyou"/>
         <input  style={styles.formEmail} type="email" name="email" placeholder="Email Address"/>
         <br/>
         <input style={styles.formText} type="text" name="message" placeholder="Message" required/>

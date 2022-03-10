@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-<<<<<<< HEAD
 function Contact() {
 
   const styles = {
@@ -72,16 +71,6 @@ function Contact() {
       </form>
     </div>
    </div>
-=======
-function About() {
-  return (
-   <React.Fragment>
-     {/*
-     Email, LinkedIn, Github 
-     Stretch: Email form
-     */}
-   </React.Fragment>
->>>>>>> 2a769ae510c3247ebbf5977231f5c6381e2b671a
   );
 }
 

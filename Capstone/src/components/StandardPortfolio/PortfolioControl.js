@@ -1,12 +1,9 @@
 import React from 'react';
-<<<<<<< HEAD
 import { connect } from 'react-redux';
 import { getAllRepositories } from '../../actions/index'
 import * as c from '../../actions/ActionTypes';
 import GitRepository from './GitRepository';
 import {v4} from 'uuid'; 
-=======
->>>>>>> 2a769ae510c3247ebbf5977231f5c6381e2b671a
 
 const repoCategories = [
   "favorites",
@@ -17,7 +14,6 @@ const repoCategories = [
 
 export class PortfolioControl extends React.Component{
   constructor(props){
-<<<<<<< HEAD
     super(props);
   }
 
@@ -124,18 +120,3 @@ const mapStateToProps = state => {
   }
 }
 export default connect(mapStateToProps)(PortfolioControl);
-=======
-    super(props)
-  }
-
-  render(){
-    return(
-      <React.Fragment>
-
-      </React.Fragment>
-    )
-  }
-}
-
-export default PortfolioControl;
->>>>>>> 2a769ae510c3247ebbf5977231f5c6381e2b671a

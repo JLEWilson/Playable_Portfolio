@@ -3,10 +3,10 @@ import Unity, { UnityContext } from "react-unity-webgl";
 import { useMediaQuery } from '../Hooks/MediaQuery';
 
 const unityContext = new UnityContext({
-  loaderUrl: "./unityBuild/PlayablePortfolio.loader.js",
-  dataUrl: "./unityBuild/PlayablePortfolio.data",
-  frameworkUrl: "./unityBuild/PlayablePortfolio.framework.js",
-  codeUrl: "./unityBuild/PlayablePortfolio.wasm",
+  loaderUrl: "./unityBuild/Playable_Portfolio.loader.js",
+  dataUrl: "./unityBuild/Playable_Portfolio.data",
+  frameworkUrl: "./unityBuild/Playable_Portfolio.framework.js",
+  codeUrl: "./unityBuild/Playable_Portfolio.wasm",
 });
 
 function UnityGame() {

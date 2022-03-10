@@ -14,8 +14,9 @@ function GitRepository(props) {
 		repoContainer: {
 			border: "2px solid black",
 			textAlign: "center",
-			backgroundColor: "#84ca94",
-			marginBottom: ".5em"
+			backgroundColor: "#767778",
+			marginBottom: ".5em",
+			color: "rgba(235, 250, 215, .80)",
 		},
 		topics: {
 			padding: "2px .7em ",
@@ -24,7 +25,7 @@ function GitRepository(props) {
 			listStyle: "none",
 			border: "2px solid black", 
 			borderRadius: "16px",
-			backgroundColor: "#84ca94"
+			backgroundColor: "rgba(42,86,51,.5)"
 		},
 		flexCenter: {
 			display: "flex",
@@ -32,11 +33,11 @@ function GitRepository(props) {
 		},
 		buttons: {
 			margin: " 0 1em 1em",
-			backgroundColor: "LightGreen",
-			borderRadius: "6px"
-		},
-		hr: {
-			borderColor: "#2a5633",
+			borderRadius: "8px",
+			border: "none",
+			padding: ".3em 1em",
+			backgroundColor: "rgb(41,58,44)",
+			color: "rgba(235, 250, 215, .7)",
 		}
 	}
 	
@@ -52,10 +53,10 @@ function GitRepository(props) {
 	return(
 		<div style={repoStyles.repoContainer}>
 			<h3>{repo.name}</h3>
-			<hr style={repoStyles.hr}/>
+			
 			<p>{repo.description}</p>
 			<ul style={repoStyles.flexCenter}>
-				{repo.topics.map((topic, index) => 
+				{repo.topics.map((topic) => 
 					<li 
 						key={v4()}
 						style={repoStyles.topics}

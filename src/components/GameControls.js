@@ -7,7 +7,8 @@ function GameControls() {
   const styles = {
     outerContainer: {
       display: "flex",
-      
+      backgroundColor: "rgba(255, 255, 255, .25)",
+      borderRadius: "12px"
     },
     innerContainer1: {
       display: "flex",

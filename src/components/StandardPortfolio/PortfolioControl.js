@@ -19,7 +19,7 @@ export class PortfolioControl extends React.Component{
 
   componentDidMount() {
     const { dispatch } = this.props;
-    dispatch(getAllRepositories());
+    //dispatch(getAllRepositories());
   }
   componentDidUpdate(prevProps){
     if(prevProps.repositories !== this.props.repositories){
@@ -44,7 +44,7 @@ export class PortfolioControl extends React.Component{
     
     const styles = {
       container: {
-        marginTop: "1em",
+        marginTop: "3em",
         display: "flex",
         gap: "2em",
       },
@@ -52,14 +52,18 @@ export class PortfolioControl extends React.Component{
         flex: "1",
         display: "flex",
         flexDirection: "column",
-        gap: "1em"
+        gap: "2em",
       },
       repos: {
-        flex: "2",
+        flex: "3",
       },
       buttonStyles: {
-        backgroundColor: "#84ca94",
-        fontSize: "3em",
+        backgroundColor: "rgba(42,86,51,.5)",
+        border: "none",
+        color: "rgba(235, 250, 215, .6)",
+        fontSize: "2em",
+        padding: ".75em 0",
+        borderRadius: "12px"
       },
       loading: {
         color: "lightGray",

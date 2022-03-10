@@ -12,7 +12,9 @@ function About() {
       margin: "1em 0"
     },
     about: {
-      backgroundColor: "#84ca94",
+      backgroundColor: "rgba(255, 255, 255, .25)",
+      fontWeight: "700",
+      fontSize: "1.12em",
       border: "2px solid black",
       width: "80%",
       margin: "0 auto",

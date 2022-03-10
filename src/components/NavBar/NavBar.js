@@ -7,7 +7,7 @@ function NavBar() {
 	const navStyles = {
 		container: {
 			display: "flex",
-			backgroundColor: "#2a5633",
+			backgroundColor: "rgba(255, 255, 255, .1)",
 			alignItems: "center",
 			justifyContent: "center",
 			padding: "1em",
@@ -22,33 +22,32 @@ function NavBar() {
 			textAlign: "center",
 			flex: "1",
 			padding: ".7em",
-			color: "black",
+			color: "rgba(250, 235, 215, .80)",
 			fontWeight: "bold",
 			fontSize: isSmallScreen ? ".75em" : "1.17em",
-			boxShadow: ".2em .2em .5em #0c4421"
+			boxShadow: ".4em .4em .5em #32231A"
 		})
-
 	}
 
   return(
 		<React.Fragment>
 			<div style={navStyles.container}>
-				<Link to="/" style={navStyles.linkOuter}>
+				<Link to="/Playable_Portfolio/" style={navStyles.linkOuter}>
 					<div style={navStyles.link(isSmallScreen)}>
 						Playable Portfolio	
 					</div>
 				</Link>
-				<Link to="/portfolio" style={navStyles.linkOuter}>
+				<Link to="/Playable_Portfolio/portfolio" style={navStyles.linkOuter}>
 					<div style={navStyles.link(isSmallScreen)}>
 						Standard Portfolio	
 					</div>
 				</Link>
-				<Link to="/about" style={navStyles.linkOuter}>
+				<Link to="/Playable_Portfolio/about" style={navStyles.linkOuter}>
 					<div style={navStyles.link(isSmallScreen)}>
 						About Me	
 					</div>
 				</Link>
-				<Link to="/contact" style={navStyles.linkOuter}>
+				<Link to="/Playable_Portfolio/contact" style={navStyles.linkOuter}>
 					<div style={navStyles.link(isSmallScreen)}>
 						Contact	
 					</div>

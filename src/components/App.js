@@ -21,20 +21,20 @@ function App() {
       <div style={styles.container}>
         <NavBar/>
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/Playable_Portfolio">
             <UnityGame />
             <GameControls/>
           </Route>
-          <Route path="/portfolio">
+          <Route path="/Playable_Portfolio/portfolio">
             <PortfolioControl />
           </Route>
-          <Route path="/about">
+          <Route path="/Playable_Portfolio/about">
             <About />
           </Route>
-          <Route path="/contact">
+          <Route path="/Playable_Portfolio/contact">
             <Contact />
           </Route>
-          <Route path="/thankyou">
+          <Route path="/Playable_Portfolio/thankyou">
             <ThankYou />
           </Route>
         </Switch>

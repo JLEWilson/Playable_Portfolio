@@ -15,8 +15,10 @@ function Contact() {
       width: "30vw",
       textAlign: "center",
       textDecoration:"none",
-      color: "black",
-      backgroundColor: "#84ca94",
+      color: "rgba(235, 250, 215, .6)",
+      borderRadius: "12px",
+      padding: ".5em 0",
+      backgroundColor: "rgba(42,86,51,.5)",
       margin: "1em auto"
     },
     email: {
@@ -25,22 +27,28 @@ function Contact() {
     },
     formEmail: {
       width: " 35vw",
-      marginTop: "2em"
+      marginTop: "2em",
+      backgroundColor: "rgba(250, 235, 215, .80)",
     },
     formText: {
       width: " 35vw",
-      height: "5em"
+      height: "5em",
+      backgroundColor: "rgba(250, 235, 215, .80)",
     },
     formButton: {
       marginTop: "1em",
       padding: ".5em",
-      backgroundColor: "LightGreen"
+      border: "none",
+      backgroundColor: "rgb(41,58,44)",
+			color: "rgba(235, 250, 215, .7)",
     },
     emailMe: {
-      marginBottom: "0"
+      marginBottom: "0",
+      color: "rgba(250, 235, 215, .80)",
     },
     emailAddress: {
-      marginTop: ".2em"
+      marginTop: ".2em",
+      color: "rgba(250, 235, 215, .80)",
     }
 
   }

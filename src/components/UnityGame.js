@@ -3,10 +3,10 @@ import Unity, { UnityContext } from "react-unity-webgl";
 import { useMediaQuery } from '../Hooks/MediaQuery';
 
 const unityContext = new UnityContext({
-  loaderUrl: "/unityBuild/PlayablePortfolio.loader.js",
-  dataUrl: "/unityBuild/PlayablePortfolio.data",
-  frameworkUrl: "/unityBuild/PlayablePortfolio.framework.js",
-  codeUrl: "/unityBuild/PlayablePortfolio.wasm",
+  loaderUrl: "../unityBuild/PlayablePortfolio.loader.js",
+  dataUrl: "../unityBuild/PlayablePortfolio.data",
+  frameworkUrl: "../unityBuild/PlayablePortfolio.framework.js",
+  codeUrl: "../unityBuild/PlayablePortfolio.wasm",
 });
 
 function UnityGame() {
@@ -36,7 +36,7 @@ function UnityGame() {
 
 export default UnityGame;
 
-/* aspect rations
+/* aspect ratios
 320 x 180, small
 640 x 360, medium
 960 x 540, large

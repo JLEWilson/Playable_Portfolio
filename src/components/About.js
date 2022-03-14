@@ -13,6 +13,7 @@ function About() {
     },
     about: {
       backgroundColor: "rgba(255, 255, 255, .25)",
+      color: "rgba(250, 235, 215, .80)",
       fontWeight: "700",
       fontSize: "1.12em",
       border: "2px solid black",

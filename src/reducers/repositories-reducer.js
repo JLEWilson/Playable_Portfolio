@@ -40,12 +40,6 @@ export default (state = initialState, action) => {
         isLoadingRepositories: false,
         error: action.error
       });
-      case c.SET_CATEGORY:
-        const targetRepos = state.repositories.filter(r => r.topics.includes(action.category))
-        return Object.assign({}, state, {
-          category : action.category,
-          targetRepos: targetRepos
-        });
     default:
       return state;
     }

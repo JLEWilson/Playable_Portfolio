@@ -36,13 +36,13 @@ function GameControls() {
       <div style={styles.outerContainer}>
         <div style={styles.innerContainer1}>
           <h3 style={styles.vertCenter}>Movement: </h3>
-          <img src={Arrows} style={styles.movement}/>
+          <img src={Arrows} alt="control option 1, move with arrow keys" style={styles.movement}/>
           <h1>/</h1>
-          <img src={Wasd} style={styles.movement}/>
+          <img src={Wasd} alt="control option 2, move with W, A, S, D keys" style={styles.movement}/>
         </div>
         <div style={styles.innerContainer2}>
           <h3 style={styles.vertCenter}>Menu: </h3>
-          <img src={M} style={styles.vertCenter}/>
+          <img src={M} alt="M to open in game menu" style={styles.vertCenter}/>
         </div>
       </div>
     </React.Fragment>

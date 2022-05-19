@@ -4,7 +4,7 @@ import NavBar from "./NavBar/NavBar";
 import About from "./About";
 import Contact from "./Contact"
 import GameControls from "./GameControls";
-import PortfolioControl from "./StandardPortfolio/PortfolioControl";
+import Portfolio from "./StandardPortfolio/Portfolio";
 import ThankYou from "./ThankYou";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -26,7 +26,7 @@ function App() {
             <GameControls/>
           </Route>
           <Route path="/Playable_Portfolio/portfolio">
-            <PortfolioControl />
+            <Portfolio />
           </Route>
           <Route path="/Playable_Portfolio/about">
             <About />

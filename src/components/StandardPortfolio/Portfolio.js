@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { connect, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { getAllRepositories } from '../../actions/index'
-import * as c from '../../actions/ActionTypes';
 import GitRepository from './GitRepository';
 import {v4} from 'uuid'; 
 import { useDispatch } from 'react-redux';

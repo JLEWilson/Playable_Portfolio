@@ -62,7 +62,7 @@ const getRepositories = async (totalPages) => {
     const responses = await Promise.all(
       Array.from(
         Array(totalPages),
-        (_, i) => fetch(`https://api.github.com/users/jlewilson/repos?per_page=60&page=${i+1}`)
+        (_, i) => fetch(`https://api.github.com/users/jlewilson/repos?sort=pushed&per_page=60&page=${i+1}`)
       ));
     const json = await Promise.all(responses.map(r => r.json()));
     return json.flat();

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { getAllRepositories } from '../../actions/index'
 import GitRepository from './GitRepository';
+import Topic from './Topic';
 import {v4} from 'uuid'; 
 import { useDispatch } from 'react-redux';
 
@@ -31,8 +32,6 @@ const Portfolio = () => {
     dispatch(getAllRepositories());
   }, [dispatch])
   
-  
-  
   const styles = {
     container: {
       marginTop: "3em",
@@ -47,14 +46,6 @@ const Portfolio = () => {
     },
     repos: {
       flex: "3",
-    },
-    buttonStyles: {
-      backgroundColor: "rgba(42,86,51,.5)",
-      border: "none",
-      color: "rgba(235, 250, 215, .6)",
-      fontSize: "2em",
-      padding: ".75em 0",
-      borderRadius: "12px"
     },
     loading: {
       color: "lightGray",
@@ -82,12 +73,12 @@ const Portfolio = () => {
       <div style={styles.container}>
         <div style={styles.categories}>
           {repoCategories.map((category) =>
-            <button 
-            style={styles.buttonStyles}
-            type="button"
-            key={v4()}
-            onClick={()=> setCategory(category)}
-            >{titleCaseText(category)}</button>
+            <Topic 
+              click={setCategory} 
+              category={category}
+              text={titleCaseText(category)}
+              key={v4()}
+              />
           )}
         </div>
         <div style={styles.repos}>

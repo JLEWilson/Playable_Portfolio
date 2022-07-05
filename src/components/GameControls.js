@@ -3,7 +3,7 @@ import Arrows from "../img/Key_Arrows.png";
 import Wasd from "../img/Key_WASD.png";
 import M from "../img/Key_M.png";
 
-function GameControls() {
+const GameControls = () => {
   const styles = {
     outerContainer: {
       display: "flex",

@@ -29,7 +29,7 @@ const Portfolio = () => {
 
   useEffect(() =>{
     dispatch(getAllRepositories());
-  }, [])
+  }, [dispatch])
   
   
   

@@ -1,9 +1,26 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { useMediaQuery } from '../../Hooks/MediaQuery';
+import NavButton from './NavButton';
+
+const ROUTES = [
+	{
+		to: "/Playable_Portfolio",
+		text: "Playable Portfolio"
+	},
+	{
+		to: "/Playable_Portfolio/portfolio",
+		text: "Standard Portfolio"
+	},
+	{
+		to: "/Playable_Portfolio/about",
+		text: "About"
+	},
+	{
+		to: "/Playable_Portfolio/contact",
+		text: "Contact"
+	},
+];
 
 function NavBar() {
-	const isSmallScreen = useMediaQuery('(max-width: 865px)');
 	const navStyles = {
 		container: {
 			display: "flex",
@@ -14,44 +31,14 @@ function NavBar() {
 			gap: "5%",
 			borderRadius: "12px"
 		},
-		linkOuter: {
-			textDecoration: "none",
-		},
-		link: isSmallScreen => ({
-			border: "2px solid black",
-			textAlign: "center",
-			flex: "1",
-			padding: ".7em",
-			color: "rgba(250, 235, 215, .80)",
-			fontWeight: "bold",
-			fontSize: isSmallScreen ? ".75em" : "1.17em",
-			boxShadow: ".4em .4em .5em #32231A"
-		})
 	}
 
   return(
 		<React.Fragment>
 			<div style={navStyles.container}>
-				<Link to="/Playable_Portfolio/" style={navStyles.linkOuter}>
-					<div style={navStyles.link(isSmallScreen)}>
-						Playable Portfolio	
-					</div>
-				</Link>
-				<Link to="/Playable_Portfolio/portfolio" style={navStyles.linkOuter}>
-					<div style={navStyles.link(isSmallScreen)}>
-						Standard Portfolio	
-					</div>
-				</Link>
-				<Link to="/Playable_Portfolio/about" style={navStyles.linkOuter}>
-					<div style={navStyles.link(isSmallScreen)}>
-						About Me	
-					</div>
-				</Link>
-				<Link to="/Playable_Portfolio/contact" style={navStyles.linkOuter}>
-					<div style={navStyles.link(isSmallScreen)}>
-						Contact	
-					</div>
-				</Link>
+				{ROUTES.map((route, index)=> (
+					<NavButton to={route.to} text={route.text} key={index}/>
+				))}
 			</div>
 		</React.Fragment>
   )

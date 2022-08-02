@@ -1,18 +1,15 @@
-import React from "react";
-import { Unity, useUnityContext } from "react-unity-webgl";
-import { useMediaQuery } from '../Hooks/MediaQuery';
+import React from "react"
+import { Unity } from "react-unity-webgl"
+import { useMediaQuery } from '../Hooks/MediaQuery'
+import { useCustomUnityContext } from "../Hooks/UnityContext"
 
 const UnityGame = () => {
-  const isMDScreen = useMediaQuery('(min-width: 800px) and (max-width: 1199px)');
-  const isLGScreen = useMediaQuery('(min-width: 1200px) and (max-width: 1599px)');
-  const isXLScreen = useMediaQuery('(min-width: 1600px)');
-  const { unityProvider, isLoaded, loadingProgression } = useUnityContext({
-    loaderUrl: "./unityBuild/Playable_Portfolio.loader.js",
-    dataUrl: "./unityBuild/Playable_Portfolio.data",
-    frameworkUrl: "./unityBuild/Playable_Portfolio.framework.js",
-    codeUrl: "./unityBuild/Playable_Portfolio.wasm",
-  });
-  const loadingPercentage = Math.round(loadingProgression * 100);
+  const isMDScreen = useMediaQuery('(min-width: 800px) and (max-width: 1199px)')
+  const isLGScreen = useMediaQuery('(min-width: 1200px) and (max-width: 1599px)')
+  const isXLScreen = useMediaQuery('(min-width: 1600px)')
+  const { unityProvider, isLoaded, loadingProgression } = useCustomUnityContext()
+  const loadingPercentage = Math.round(loadingProgression * 100)
+
   const style = {
     game: (isMd, isLg, isXl) => ({
       width:  isXl ? "1280px" :

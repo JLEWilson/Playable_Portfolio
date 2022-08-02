@@ -3,19 +3,23 @@ import NavButton from './NavButton';
 
 const ROUTES = [
 	{
-		to: "/Playable_Portfolio",
+		to: "/",
+		text: "Home"
+	},
+	{
+		to: "/game",
 		text: "Playable Portfolio"
 	},
 	{
-		to: "/Playable_Portfolio/portfolio",
+		to: "/portfolio",
 		text: "Standard Portfolio"
 	},
 	{
-		to: "/Playable_Portfolio/about",
+		to: "/about",
 		text: "About"
 	},
 	{
-		to: "/Playable_Portfolio/contact",
+		to: "/contact",
 		text: "Contact"
 	},
 ];

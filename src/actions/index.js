@@ -47,11 +47,12 @@ export const getAllRepositories = () => {
 const getUserData = async () => {
   try {
     const response = await fetch(`https://api.github.com/users/jlewilson`);
-    if(!response.ok)
-    {
-      throw Error(response.statusText);
+    if (!response.ok) {
+      const errorMessage = `${response.status} ${response.statusText}`;
+      throw new Error(errorMessage);
+    } else {
+      return response.json();
     }
-    return await response.json();
   } catch(error){
     return error;
   }

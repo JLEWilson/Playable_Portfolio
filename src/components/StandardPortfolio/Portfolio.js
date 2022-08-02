@@ -18,7 +18,9 @@ const Portfolio = () => {
   const [category, setCategory] = useState("favorites")
   const isLoadingUserInfo = useSelector((state) => state.isLoadingUserInfo)
   const isLoadingRepositories = useSelector((state) => state.isLoadingRepositories)
+  const isLoaded = useSelector((state) => state.isLoaded)
   const error = useSelector((state) => state.error)
+  console.log(error)
   const repositories = useSelector((state) => state.repositories)
   const targetRepos = repositories.filter(r => r.topics.includes(category))
 
@@ -30,7 +32,7 @@ const Portfolio = () => {
 
   useEffect(() =>{
     dispatch(getAllRepositories());
-  }, [dispatch])
+  }, [dispatch, isLoaded])
   
   const styles = {
     container: {
@@ -60,13 +62,10 @@ const Portfolio = () => {
   }
     
   if (error) {
-    console.log("error");
-    return <div style={styles.error}>Error: {error.message}</div>;
+    return <div style={styles.error}>Error: {error}</div>;
   } else if (isLoadingUserInfo) {
-    console.log("loading");
     return <div style={styles.loading}>Gathering User Details...</div>;
   } else if (isLoadingRepositories) {
-    console.log("loading");
     return <div style={styles.loading}>Loading all repositories...</div>;
   } else {
     return (

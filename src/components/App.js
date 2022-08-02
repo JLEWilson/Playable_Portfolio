@@ -7,9 +7,11 @@ import GameControls from "./GameControls";
 import Portfolio from "./StandardPortfolio/Portfolio";
 import ThankYou from "./ThankYou";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from "./Home";
+import AppContainer from "./AppContainer";
 
 
-function App() {
+const App = () => {
   const styles = {
     container: {
       width: "80vw",
@@ -18,27 +20,32 @@ function App() {
   }
   return (
     <Router>
-      <div style={styles.container}>
-        <NavBar/>
-        <Switch>
-          <Route exact path="/Playable_Portfolio">
-            <UnityGame />
-            <GameControls/>
-          </Route>
-          <Route path="/Playable_Portfolio/portfolio">
-            <Portfolio />
-          </Route>
-          <Route path="/Playable_Portfolio/about">
-            <About />
-          </Route>
-          <Route path="/Playable_Portfolio/contact">
-            <Contact />
-          </Route>
-          <Route path="/Playable_Portfolio/thankyou">
-            <ThankYou />
-          </Route>
-        </Switch>
-      </div>
+      <AppContainer>
+        <div style={styles.container}>
+          <NavBar/>
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/game">
+              <UnityGame />
+              <GameControls/>
+            </Route>
+            <Route path="/portfolio">
+              <Portfolio />
+            </Route>
+            <Route path="/about">
+              <About />
+            </Route>
+            <Route path="/contact">
+              <Contact />
+            </Route>
+            <Route path="/thankyou">
+              <ThankYou />
+            </Route>
+          </Switch>
+        </div>
+      </AppContainer>
     </Router>
   );
 }

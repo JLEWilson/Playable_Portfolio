@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ThankYou(props) {
+const ThankYou = () => {
   return (
     <div>
       <h1>Thank you for your interest!</h1>

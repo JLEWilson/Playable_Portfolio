@@ -24,7 +24,7 @@ There is also an about me section, and a contact section with a working email fo
 ## Setup/Installation Requirements
 
 Step1: Clone the project.
-* _You can find the github repository [here](https://github.com/JLEWilson/tic-cat-toe)_
+* _You can find the github repository [here](https://github.com/JLEWilson/Playable_Portfolio)_
 * _Click the code button, and copy the https link_
 * _In your in git bash or your preferred git terminal navigate to the directory you would like to store the project_
 * _Enter: `git clone` followed by the https link_
@@ -35,7 +35,7 @@ Step2: Install Dependencies.
 
 
 * _OR_
-* _You can find the deployed project on gh-pages [here](https://jlewilson.github.io/tic-cat-toe/)_
+* _You can find the deployed project on gh-pages [here](https://jlewilson.github.io/Playable_Portfolio/)_
 
 ## Webpage Endpoints
 
